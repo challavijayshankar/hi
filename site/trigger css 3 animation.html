@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>trigger CSS3 Animation</title>
+<style>
+#box { margin-left:10px;
+		margin-right:100px;
+		margin-top:25px;
+		padding:50px;
+		background-color:#7A77CF;
+		transition:
+}
+#box1 { margin-left:10px;
+		margin-right:100px;
+		margin-top:25px;
+		height:250px;
+		width:250px;
+		background-color:#00FF44;
+		transition:
+}
+</style>
+<script>
+function change(el)
+{	var eye=document.getElementById('box');
+	eye.style.transition="background 1.0s ease-out 1.0s";
+	eye.style.transition="background 1.0s ease-in-out 1.0s";
+	eye.style.transition="background 1.0s ease-out 1.0s";
+	eye.style.transition="background 1.0s linear 1.0s";
+	eye.style.background=el;
+	}
+function change1(el1){
+		var eye1=document.getElementById('box1');
+		eye1.style.transition="opacity 0.4s linear 1.0s";
+		eye1.style.opacity=el1;
+	}
+</script>
+</head>
+<body>
+<button id="hii" onClick="change('#000000')">Trigger1</button>
+<button id="hii1" onClick="change('#f10162')">Trigger2</button>
+<button id="hii2" onClick="change('#fff000')">Trigger3</button>
+<div id="box"></div>
+</br><br>
+<button id="hii3" onClick="change1('0.3')">Trigger1</button>
+<button id="hii4" onClick="change1('0.61')">Trigger2</button>
+<button id="hii5" onClick="change1('0.1')">Trigger3</button>
+<div id="box1"></div>
+</body>
+</html>
